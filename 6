@@ -1,0 +1,38 @@
+package ex_siva;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Ex6 {
+
+	public static void main(String[] args) {
+		//handle exceptions using try catch block
+		try
+		{
+			//prompt the user for input stream
+		System.out.println("enter a number");
+		//read input from keyboard
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		//using if-else block
+		if(a>0)
+		{
+			System.out.println("number is positive");
+			
+		}
+		else if(a<0)
+		{
+			System.out.println("number is negative");
+		}
+		else
+		{
+			System.out.println("0");
+		}
+		}
+		catch(InputMismatchException ie)
+		{
+			System.out.println("please enter valid input");
+		}
+			}
+
+}
